@@ -3,3 +3,4 @@
 test commit
 push from github
 
+[![Build Status](http://54.166.98.211/job/link-jenkins-to-github/badge/icon)](http://54.166.98.211/job/link-jenkins-to-github/)
