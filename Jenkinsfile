@@ -29,9 +29,15 @@ pipeline {
                 echo 'Installing requirements...'
                 script {
                 currentBuild.changeSets.each { changeset ->
-                                changeset.metaClass.properties.each { prop ->
-                                    x = prop.name
-                                 println "Attribute name: ${prop.name} : ${changeset.x}"
+                                
+                    println(changeset.logs)
+                    println(changeset.kind)
+                    println(changeset.class)
+                    println(changeset.emptySet)
+                    println(changeset.items)
+                    println(changeset.run)
+                    println(changeset.browser)
+                               
                                   }
                                 
               
