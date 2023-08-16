@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo 'Installing requirements...'
                 script {
-                changesets.each { changeset ->
+                currentBuild.changeSets.each { changeset ->
                                 changeset.metaClass.properties.each { prop ->
                                  println "Attribute name: ${prop.name}"
                                   }
