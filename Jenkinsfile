@@ -30,13 +30,13 @@ pipeline {
                 script {
                 currentBuild.changeSets.each { changeset ->
                                 
-                    println(changeset.logs)
-                    println(changeset.kind)
-                    println(changeset.class)
-                    println(changeset.emptySet)
-                    println(changeset.items)
-                    println(changeset.run)
-                    println(changeset.browser)
+                    println("logs" +changeset.logs)
+                    println("kind" + changeset.kind)
+                    println("class" +changeset.class)
+                    println("emptySet" +changeset.emptySet)
+                    println("items" +changeset.items)
+                    println("items" +changeset.run)
+                    println("browser" +changeset.browser)
                                
                                   }
                                 
