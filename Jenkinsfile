@@ -27,11 +27,20 @@ pipeline {
         stage('Requirements') {
             steps {
                 echo 'Installing requirements...'
-                changesets.metaClass.properties.each { prop ->
-                    println "Attribute name: ${prop.name}"
-                }
+                changesets.each { changeset ->
+                                changeset.metaClass.properties.each { prop ->
+                                 println "Attribute name: ${prop.name}"
+                                  }
+                    return 
+                
+    }
+    
+  
+}
+
+
             }
-        }
+        
         stage('Build') {
             steps {
                 echo 'Building..'
