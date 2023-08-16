@@ -29,14 +29,18 @@ pipeline {
                 echo 'Installing requirements...'
                 script {
                 currentBuild.changeSets.each { changeset ->
-                                
-                    println("logs" +changeset.logs)
-                    println("kind" + changeset.kind)
-                    println("class" +changeset.class)
-                    println("emptySet" +changeset.emptySet)
-                    println("items" +changeset.items)
-                    println("items" +changeset.run)
-                    println("browser" +changeset.browser)
+                    changeset.logs.each { log ->            
+                    println("logs:" +log)
+                    }
+                    println("kind:" + changeset.kind)
+                    println("class:" +changeset.class)
+                    println("emptySet:" +changeset.emptySet)
+                    changeset.items.each { item ->
+                        
+                    println("items:" +item)
+                    }
+                    println("run:" +changeset.run)
+                    println("browser:" +changeset.browser)
                                
                                   }
                                 
