@@ -32,7 +32,7 @@ pipeline {
                                 changeset.metaClass.properties.each { prop ->
                                  println "Attribute name: ${prop.name}"
                                   }
-                    return 
+              
                 
     }
     
