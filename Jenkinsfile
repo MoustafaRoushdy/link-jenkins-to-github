@@ -30,7 +30,8 @@ pipeline {
                 script {
                 currentBuild.changeSets.each { changeset ->
                                 changeset.metaClass.properties.each { prop ->
-                                 println "Attribute name: ${prop.name} : ${changeset.prop.name}"
+                                    x = prop.name
+                                 println "Attribute name: ${prop.name} : ${changeset.x}"
                                   }
                                 
               
